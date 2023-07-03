@@ -13,9 +13,15 @@ class LoginPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLogin: false
+      isLogin: true
     }
   }
+  changeLogin=()=>{
+    if(this.state.isLogin)
+        this.setState({isLogin: false});
+    else    
+        this.setState({isLogin: true});
+}
 
   render() {
     return (
